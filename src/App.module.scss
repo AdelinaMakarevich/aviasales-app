@@ -1,0 +1,17 @@
+html {
+  background-color: #F3F7FA;
+}
+.header {
+  text-align: center;
+  margin: 50px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 890px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}

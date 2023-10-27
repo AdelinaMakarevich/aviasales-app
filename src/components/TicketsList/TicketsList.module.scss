@@ -1,0 +1,40 @@
+
+.ticketsListBlock {
+    display: flex;
+    flex-direction: column;
+}
+.radioGroup {
+    margin: 0 20px;
+    width: 502px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.5px;
+}
+.radioButton {
+    width: 251px;
+    height: 50px;
+    flex-shrink: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+.progress {
+  width: 502px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 550px) {
+    .progress, .radioGroup {
+        width: 300px;
+    }
+    .radioButton {
+        width: 150px;
+        font-size: 10px;
+    }
+}
