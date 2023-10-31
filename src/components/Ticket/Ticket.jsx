@@ -1,34 +1,11 @@
 import React from 'react'
 import { format, add } from 'date-fns'
 
-import S7 from '../Img/S7.svg'
-import UT from '../Img/UT.svg'
-import DP from '../Img/DP.svg'
-import FV from '../Img/FV.svg'
-import U6 from '../Img/U6.svg'
-import W6 from '../Img/W6.svg'
-import BT from '../Img/BT.svg'
-import AK from '../Img/AK.svg'
-
 import styles from './Ticket.module.scss'
 
 const Ticket = ({ tickets }) => {
   const { price, segments, carrier } = tickets
   const [toDestination, fromDestination] = segments
-  const airlineLogos = {
-    S7,
-    UT,
-    DP,
-    FV,
-    U6,
-    W6,
-    BT,
-    AK,
-  }
-
-  function showLogo(name) {
-    return airlineLogos[name] || null
-  }
 
   function getTimeFromMins(mins) {
     const hours = Math.round(mins / 60)
@@ -61,7 +38,7 @@ const Ticket = ({ tickets }) => {
     <article className={styles.ticket}>
       <h5 className={styles.ticketHeader}>
         {price} Р
-        <img className={styles.ticketLogo} src={showLogo(carrier)} alt={carrier} />
+        <img className={styles.ticketLogo} src={`https://pics.avs.io/99/36/${carrier}.png`} alt={carrier} />
       </h5>
       <TableInfo segment={toDestination} />
       <TableInfo segment={fromDestination} />

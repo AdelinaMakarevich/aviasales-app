@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { getSearchId } from './store/actionCreators/ticketsCreators'
-import img from './components/Img/Logo.png'
+import img from './components/assets/Logo.png'
 import TicketsList from './components/TicketsList'
 import Filter from './components/Filter'
 import styles from './App.module.scss'

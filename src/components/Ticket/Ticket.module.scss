@@ -52,6 +52,7 @@
 .ticketLogo {
     width: 110px;
     height: 36px;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 550px) {
@@ -62,7 +63,6 @@
     .ticketLogo {
         width: 50px;
         height: auto;
-        padding-bottom: 10px;
     }
     .informationHeader, .informationContent {
         font-size: 10px;

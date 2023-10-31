@@ -26,7 +26,7 @@ function Filter() {
         {filters.map(({ id, value, check }) => {
           return (
             <li key={uniqid()}>
-              <Checkbox onChange={handleChange} checked={check} id={id}>
+              <Checkbox className={styles.checkbox} onChange={handleChange} checked={check} id={id}>
                 {value}
               </Checkbox>
             </li>
