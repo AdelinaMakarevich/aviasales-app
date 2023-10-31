@@ -19,8 +19,8 @@ const App = () => {
         <img src={img} alt="logo" />
       </header>
       <main className={styles.main}>
-        <Filter></Filter>
-        <TicketsList></TicketsList>
+        <Filter />
+        <TicketsList />
       </main>
     </div>
   )
